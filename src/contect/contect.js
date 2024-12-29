@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import "./contect.css";
+import QRCodeGenerator from "../qr/qr";
 
 const Contact = () => {
     const [formData, setFormData] = useState({
@@ -154,7 +155,9 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
-
+            <div>
+                <QRCodeGenerator />
+            </div>
         </div>
     );
 };
