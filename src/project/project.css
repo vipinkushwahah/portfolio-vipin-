@@ -1,0 +1,134 @@
+.project-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    padding: 30px 150px 30px 150px;
+}
+
+.project-details {
+    flex: 1;
+    padding: 20px;
+    max-width: 500px;
+}
+
+.project-number {
+    font-size: 7.2rem;
+    font-weight: bold;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.project-name {
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 10px;
+}
+
+.project-description {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.project-technologies {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    font-family: 'Source Code Pro', monospace;
+    color: rgb(11, 241, 122);
+    padding-bottom: 20px;
+    border-bottom: 1px solid gray;
+}
+
+.project-buttons button {
+    height: 50px;
+    width: 50px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 28px;
+    transition: background-color 0.3s;
+}
+
+.repo-btn i,
+.live-btn {
+    font-size: 24px; /* Adjust size as needed */
+  }
+  
+
+.project-buttons button:hover {
+    background-color: #0056b3;
+}
+
+.project-slider {
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 600px;
+}
+
+.project-image {
+    width: 550px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+}
+
+.prev-btn{
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    transform: translateX(100px);
+    background-color: aquamarine;
+    color: black;
+}
+.next-btn {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin: 10px 15px 0px 0px;
+    background-color: aquamarine;
+    color: black;
+}
+
+@media (max-width: 768px) {
+    .project-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .project-details,
+    .project-slider {
+        max-width: 100%;
+    }
+
+    .prev-btn,
+    .next-btn {
+        left: 10px;
+        right: 10px;
+    }
+}
+@media (max-width: 480px) {
+    .project-container {
+        padding: unset !important;
+        margin-left: 10px;
+    }
+    .project-slider,
+    .project-image {
+        width: 400px !important;
+        padding: 5px;
+    }
+}

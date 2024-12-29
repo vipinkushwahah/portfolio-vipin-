@@ -1,0 +1,281 @@
+.resume-container-main{
+    padding: 30px 150px 30px 150px;
+    display: flex;
+    gap: 40px;
+    margin: 10px;
+}
+.section-descridivtion{
+    font-family: 'Source Code Pro', monospace;
+}
+.job-year{
+    margin: 24px 24px 14px 24px;
+    color: rgb(11, 241, 122);
+}
+.job-detail-numbering{
+    font-size: 15px;
+    color:rgb(11, 241, 122);
+}
+.job-company{
+    padding: 55px 0px 10px 22px;
+}
+
+.job-title{
+    margin-left: 24px;
+    font-size: 24px;
+}
+.education-institute{
+    padding: 55px 0px 0px 0px;
+}
+.education-degree{
+    padding: 15px 0px 0px 0px;
+}
+.tab-button.active {
+    background-color: rgb(11, 241, 122); /* Red background for active state */
+    color: rgb(1, 1, 1);          /* White text for contrast */
+    border-color: aquamarine;     /* Match border with background */
+}
+
+.education-list {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    gap: 16px; /* Adds spacing between items */
+    padding: 16px;
+    box-sizing: border-box;
+    height: 405px;
+    scrollbar-color: #02f47f #f1f1f1; /* Thumb color and track color */
+    overflow-y: scroll; 
+    scroll-behavior: smooth; /* Smooth scrolling for better UX */
+}
+
+.education-item {
+    display: flex;
+    flex-direction: column; /* Ensures the year, degree, and institute stack vertically */
+    padding: 12px;
+    border: 1px solid rgb(43, 39, 39);
+    border-radius: 6px;
+    background-color: rgb(43, 39, 39);
+    width: calc(50.33% - 16px); /* Adjust width for 3 columns, considering the gap */
+    height: 180px;
+    box-sizing: border-box;
+}
+
+.education-year {
+    font-weight: bold;
+    color: rgb(11, 241, 122);
+}
+
+.education-degree {
+    margin: 4px 0;
+    color: white;
+}
+
+.education-institute {
+    font-size: 0.9rem;
+    color: white;
+}
+
+/* Adjust layout for smaller screens */
+@media (max-width: 768px) {
+    .education-item {
+        width: calc(50% - 16px); /* Switch to 2 columns */
+    }
+}
+
+@media (max-width: 480px) {
+    .education-item {
+        width: 100%; /* Single column for small screens */
+    }
+}
+
+/* below responsive */
+.resume-container {
+    font-family: 'Source Code Pro', monospace;
+    max-width: 34%;
+    margin: auto;
+    padding: 16px;
+}
+
+.resume-section {
+    margin-bottom: 32px;
+}
+
+.section-title {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+    filter: drop-shadow(0 0 5px rgb(251, 251, 251));
+    font-family: 'Source Code Pro', monospace;
+}
+
+.section-description {
+    font-size: 18px;
+    font-family: 'Source Code Pro', monospace;
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.tab-button {
+    padding: 8px 16px;
+    border: 1px solid rgb(43, 39, 39);
+    border-radius: 6px;
+    background-color: rgb(43, 39, 39);
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.job-detail{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    border: 1px solid rgb(43, 39, 39);
+    border-radius: 6px;
+    background-color: rgb(43, 39, 39);
+    height: 180px;
+    width: 360px;
+    font-weight: 600;
+}
+
+.profile-details {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    gap: 16px; /* Adds space between columns */
+    justify-content: space-between; /* Space between columns */
+    padding: 16px;
+    box-sizing: border-box;
+    margin-top: 70px;
+}
+
+.profile-column {
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Allows equal width for columns */
+    min-width: 200px; /* Minimum width for columns */
+}
+
+.profile-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 28px 0;
+    border-bottom: 1px solid #ddd; /* Adds a subtle separator */
+}
+
+.profile-label {
+    font-weight: bold;
+    color: rgb(11, 241, 122); /* Darker text for labels */
+    flex: 1; /* Makes labels flexible */
+}
+
+.profile-value {
+    color: white; /* Slightly lighter text for values */
+    flex: 2; /* Makes values flexible */
+    text-align: right; /* Align values to the right */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-details {
+        flex-direction: column; /* Stack columns vertically on smaller screens */
+    }
+
+    .profile-row {
+        flex-direction: column; /* Stack labels and values vertically */
+        text-align: left; /* Align everything to the left */
+    }
+
+    .profile-value {
+        margin-top: 4px; /* Add spacing between label and value */
+        text-align: left;
+    }
+}
+@media (max-width: 480px) {
+    .profile-details {
+        flex-direction: column; /* Stack columns vertically on smaller screens */
+        margin-top: 10px;
+    }
+
+    .profile-row {
+        flex-direction: column; /* Stack labels and values vertically */
+        text-align: left; /* Align everything to the left */
+    }
+
+    .profile-value {
+        margin-top: 4px; /* Add spacing between label and value */
+        text-align: left;
+    }
+    .resume-container-main{
+        padding: unset !important;
+        display: flex;
+        flex-direction: column;
+    }
+    .skill-list{
+        display: flex;
+        gap: 30px !important;
+        width: unset !important;
+    }
+    .resume-container{
+        max-width: unset !important;
+    }
+}
+/* // hover for skills  */
+.skill-item {
+    display: flex;
+    justify-content: center; /* Centers the icon horizontally */
+    align-items: center; /* Centers the icon vertically */
+    position: relative; /* Needed for the tooltip */
+    height: 80px; /* Adjust as necessary */
+    flex-direction: column; /* Ensures the year, degree, and institute stack vertically */
+    padding: 12px;
+    border: 1px solid rgb(43, 39, 39);
+    border-radius: 6px;
+    background-color: rgb(43, 39, 39);
+    width: 80px; 
+    height: 80px;
+    box-sizing: border-box;
+}
+
+.skill-item i {
+    font-size: 40px; /* Increases icon size */
+    color:rgb(11, 241, 122); /* Icon color */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition on hover */
+}
+
+.skill-item:hover i {
+    transform: scale(1.2); /* Slightly enlarge icon on hover */
+    color: #007bff; /* Change color on hover */
+}
+
+.skill-item i::after {
+    content: attr(title); /* Shows the title from the `title` attribute */
+    position: absolute;
+    bottom: -25px; /* Position the tooltip below the icon */
+    background-color: #333; /* Dark background for the tooltip */
+    color: #fff; /* White text */
+    padding: 4px 8px; /* Tooltip padding */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 12px; /* Smaller font size */
+    opacity: 0;
+    visibility: hidden; /* Hide tooltip by default */
+    transition: opacity 0.3s ease;
+}
+
+.skill-item:hover i::after {
+    opacity: 1; /* Show tooltip on hover */
+    visibility: visible; /* Make tooltip visible */
+}
+.skill-list{
+    display: flex;
+    gap: 70px;
+    width: 600px;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
